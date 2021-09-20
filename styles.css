@@ -1,108 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 .header{
-    background: #FFFFFF;
-    position: absolute;
-    width: 1440px;
-    height: 129px;
-    left: 4px;
-    top: -5px;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
-    position: absolute;
-    width: 175px;
-    height: 91px;
-    left: 83px;
-    top: 14px;
+    position: relative;
 }
 
-.nav-link1{
-    position: absolute;
-    width: 116px;
-    height: 46px;
-    left: 332px;
-    top: 51px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #000000;
+.menu-bars li a{
+    font-size: 15px;
+}
+
+.logo img{
+    width: 7rem;
+    height: 5rem;
+}
+
+a{
     text-decoration: none;
+    color: black;
 }
 
-.nav-link2{
-    position: absolute;
-    width: 174px;
-    height: 42px;
-    left: 458px;
-    top: 51px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #000000;
-    text-decoration: none;
+ul{
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-link3{
-    position: absolute;
-    width: 247px;
-    height: 36px;
-    left: 642px;
-    top: 51px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #000000;
-    text-decoration: none;
+li{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.nav-link4{
-    position: absolute;
-    width: 170px;
-    height: 38px;
-    left: 899px;
-    top: 51px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #000000;
-    text-decoration: none;
-
+.nav-bar2{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.nav-link5{
-    position: absolute;
-    width: 170px;
-    height: 38px;
-    left: 1069px;
-    top: 53px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #000000;
-    text-decoration: none;
-}
 
-.nav-link6{
-    position: absolute;
-    width: 198px;
-    height: 42px;
-    left: 1224px;
-    top: 53px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #000000;
-    text-decoration: none;
-
-}
