@@ -6,3 +6,25 @@
     left: 4px;
     top: -5px;
 }
+
+.logo{
+    position: absolute;
+    width: 175px;
+    height: 91px;
+    left: 83px;
+    top: 14px;
+}
+
+.nav-link1{
+    position: absolute;
+    width: 116px;
+    height: 46px;
+    left: 332px;
+    top: 51px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
