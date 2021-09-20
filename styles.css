@@ -28,3 +28,31 @@
     line-height: 42px;
     color: #000000;
 }
+
+.nav-link2{
+    position: absolute;
+    width: 174px;
+    height: 42px;
+    left: 458px;
+    top: 51px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.nav-link3{
+    position: absolute;
+    width: 247px;
+    height: 36px;
+    left: 642px;
+    top: 51px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
