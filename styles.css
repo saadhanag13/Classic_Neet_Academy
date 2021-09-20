@@ -56,3 +56,47 @@
     line-height: 42px;
     color: #000000;
 }
+
+.nav-link4{
+    position: absolute;
+    width: 170px;
+    height: 38px;
+    left: 899px;
+    top: 51px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+
+}
+
+.nav-link5{
+    position: absolute;
+    width: 170px;
+    height: 38px;
+    left: 1069px;
+    top: 53px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.nav-link6{
+    position: absolute;
+    width: 198px;
+    height: 42px;
+    left: 1224px;
+    top: 53px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+
+}
