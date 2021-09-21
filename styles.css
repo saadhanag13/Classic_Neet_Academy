@@ -1,58 +1,126 @@
 *{
-    margin: 0%;
-    padding: 0%;
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 
-.header{
-    position: relative;
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-container {
+	position: relative;
+	/* z-index: 1; */
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	background: whitesmoke;
+	/* position: fixed; */
+	/* z-index: 20; */
+	/* transition: all 0.3s ease-in-out; */
 }
 
-.logo{
-    position: relative;
+.navbar {
+	display: flex;
+	width: 90%;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: large;
+	background-color: inherit;
 }
 
-.menu-bars li a{
-    font-size: 15px;
+.navlink-container {
+	display: flex;
+	width: 54%;
+	align-items: center;
+	justify-content: space-around;
+	list-style-type: none;
 }
 
-.logo img{
-    width: 7rem;
-    height: 5rem;
+.nav-link a {
+	text-decoration: none;
+	color: inherit;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.section-2{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: aqua; */
 }
 
-ul{
-    width: 50%;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section-2 .flex{
+	width: 100%;
+	height: 100%;
+	display: flex;
 }
 
-li{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.section-2 .div-1{
+	position: relative;
+	width: 50%;
+	height: 100%;
 }
 
-.nav-bar2{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+.section2 .div-1 img{
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
-.slideshow{
-    
+
+.section-2 .div-2{
+	position: relative;
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: black; */
+}
+
+.div-2 .news-box{
+	height: 65vh;
+	width: 70%;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.news-box .space{
+	width: 85%;
+}
+
+.news-box p{
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.bottom-drive{
+	border: 1px solid black;
+	padding: 10px 18px;
+	border-radius: 20px;
+}
+
+.bottom-drive a{
+	text-decoration: none;
+	letter-spacing: 0.7px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.div-2 h1{
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+.span{
+	width: 70%;
+	margin-bottom: 20px;
 }
 
