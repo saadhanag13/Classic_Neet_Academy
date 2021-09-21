@@ -245,3 +245,18 @@
 	margin-bottom: 20px;
 }
 
+.importantdates{
+	display: flex;
+	height: 90vh;
+	width: 100vw;
+}
+
+.dates{
+	width: 50%;
+	height: 100%;
+}
+
+.design{
+	width: 50%;
+	height: 100%;
+}
