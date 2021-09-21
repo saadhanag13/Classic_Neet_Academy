@@ -249,37 +249,58 @@
 	width: 70%;
 	margin-bottom: 20px;
 }
-/* 
+
 .importantdates{
 	position: relative;
 	display: flex;
 	height: 90vh;
 	width: 90vw;
-} */
+	
+} 
 
-/* .dates{
+.dates{
 	position: relative;
 	width: 50%;
-	height: 100%;
+	height: 90%;
 	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
 	justify-content: space-around;
 	align-items: center;
-}
+} 
 
-.dates span{
+/* .dates span{
 	width: 100%;
 	height: 100%;
+} */
+
+.spanele1 a{ 
+	width: 20%;
+	padding: 20px;
+	border: 5px solid black;
+	margin: 10px;
+
 }
 
-.spanele1 a{
+.spanele2 a{
 	width: 20%;
+	padding: 20px;
+	border: 5px solid black;
+	margin: 10px;
+}
+
+.spanele3 a{
+	width: 20%;
+	padding: 20px;
+	border: 5px solid black;
+	margin: 10px;
 }
 
 .design{
 	width: 50%;
 	
-} */
+	
+} 
 
 .neettoppers{
 	height: 100vh;
