@@ -180,7 +180,7 @@
 
 .section-2 .flex{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 }
 
@@ -249,19 +249,54 @@
 	width: 70%;
 	margin-bottom: 20px;
 }
-
+/* 
 .importantdates{
+	position: relative;
 	display: flex;
 	height: 90vh;
-	width: 100vw;
-}
+	width: 90vw;
+} */
 
-.dates{
+/* .dates{
+	position: relative;
 	width: 50%;
 	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.dates span{
+	width: 100%;
+	height: 100%;
+}
+
+.spanele1 a{
+	width: 20%;
 }
 
 .design{
 	width: 50%;
+	
+} */
+
+.neettoppers{
+	height: 100vh;
+	width: 100%;
+}
+
+.imagehexa{
+	position: relative;
+	height: 30vw;
+	width: 40vh;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	overflow: hidden;
+}
+
+.imagehexa ::after{
+	content: "";
+	position: absolute;
 	height: 100%;
+	width: 100%;
 }
