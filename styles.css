@@ -37,6 +37,11 @@
 	list-style-type: none;
 }
 
+.navbar span img{
+	width: 90px;
+	height: 60px;
+}
+
 .nav-link a {
 	text-decoration: none;
 	color: inherit;
