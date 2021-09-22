@@ -259,7 +259,6 @@
   width: 70%;
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 
 .importantdates {
   position: relative;
@@ -300,60 +299,6 @@
 .item5 {
   grid-area: cont6;
 }
-=======
-
-.importantdates{
-	position: relative;
-	display: flex;
-	height: 90vh;
-	width: 90vw;
-	
-} 
-
-.dates{
-	position: relative;
-	width: 50%;
-	height: 90%;
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	justify-content: space-around;
-	align-items: center;
-} 
-
-/* .dates span{
-	width: 100%;
-	height: 100%;
-} */
-
-.spanele1 a{ 
-	width: 20%;
-	padding: 20px;
-	border: 5px solid black;
-	margin: 10px;
-
-}
-
-.spanele2 a{
-	width: 20%;
-	padding: 20px;
-	border: 5px solid black;
-	margin: 10px;
-}
-
-.spanele3 a{
-	width: 20%;
-	padding: 20px;
-	border: 5px solid black;
-	margin: 10px;
-}
-
-.design{
-	width: 50%;
-	
-	
-} 
->>>>>>> 6000d0d00638153eb104343e6ffd488384a5619d
 
 .grid-item{
 	/* padding: 30px; */
