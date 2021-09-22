@@ -321,21 +321,94 @@
 }
 
 .neet-toppers {
-	height: 30vh;
+	height: 45vh;
 	width: 100%;
+	margin: 6rem 0;
+	padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.imagehexa {
-	position: relative;
-	height: 30vw;
-	width: 40vh;
-	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-	overflow: hidden;
+.neet-toppers > h1 {
+	font-size: 2.5rem;
 }
 
-.imagehexa ::after {
-	content: '';
-	position: absolute;
+.topper-card-container {
+	width: 100%;
 	height: 100%;
-	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 4rem;
+}
+
+.topper-card {
+	width: 35%;
+	height: 100%;
+	padding: 1rem;
+	background-color: rgba(86, 128, 54, 0.79);
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.topper-image {
+	width: 9rem;
+	height: 9rem;
+	position: relative;
+	background-color: blanchedalmond;
+}
+
+.topper-details {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.topper-details h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.topper-details p {
+	font-size: 1.5rem;
+}
+
+.neet-2020-toppers {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.neet-2020-toppers img {
+	position: absolute;
+	width: 18%;
+	z-index: -1;
+}
+
+.neet-2020-toppers-a {
+	position: absolute;
+	border-radius: 50px;
+	padding: .5rem 5rem;
+	border: 1px solid black;
+	font-size: 2rem;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.neet-2020-toppers-a a {
+  text-decoration: none;
+	color: black;
+}
+
+.stats {
+  width: 100%;
+  height: 60vh;
 }
