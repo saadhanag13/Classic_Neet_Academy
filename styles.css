@@ -323,68 +323,175 @@
 }
 
 .neet-toppers {
-  height: 30vh;
-  width: 100%;
+	height: 45vh;
+	width: 100%;
+	margin: 6rem 0;
+	padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.imagehexa {
-  position: relative;
-  height: 30vw;
-  width: 40vh;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  overflow: hidden;
+.neet-toppers > h1 {
+	font-size: 2.5rem;
 }
 
-.imagehexa ::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.topper-card-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 4rem;
+}
+
+.topper-card {
+	width: 35%;
+	height: 100%;
+	padding: 1rem;
+	background-color: rgba(86, 128, 54, 0.79);
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.topper-image {
+	width: 9rem;
+	height: 9rem;
+	position: relative;
+	background-color: blanchedalmond;
+}
+
+.topper-details {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.topper-details h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.topper-details p {
+	font-size: 1.5rem;
+}
+
+.neet-2020-toppers {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.neet-2020-toppers img {
+	position: absolute;
+	width: 18%;
+	z-index: -1;
+}
+
+.neet-2020-toppers-a {
+	position: absolute;
+	border-radius: 50px;
+	padding: 0.5rem 5rem;
+	border: 1px solid black;
+	font-size: 2rem;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.neet-2020-toppers-a a {
+	text-decoration: none;
+	color: black;
+}
+
+.stats {
+	width: 100%;
+	height: 60vh;
+	background: url('./img/stats_bg_img.jpg');
+	background-size: cover;
+	background-position: 0px 54%;
+	margin-top: 6rem;
+	position: relative;
+}
+
+.stats-details {
+	width: 100%;
+	height: 30%;
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+}
+
+.stat {
+	display: flex;
+	width: 20%;
+	padding: 2rem;
+	height: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.stat h1 {
+	font-size: 4rem;
+}
+
+.stat h3 {
+	font-size: 1.5rem;
+	margin-left: 1rem;
 }
 
 .studentstestimonials {
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .testimonialsbox {
-  width: 66%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 40px;
+	width: 66%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
 }
 
 .testimonials {
-  border: 1px solid black;
-  border-radius: 14px;
-  height: 12rem;
-  width: 20rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	border: 1px solid black;
+	border-radius: 14px;
+	height: 12rem;
+	width: 20rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .testimonials span {
-  height: 100%;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.testimonials span img{
+.testimonials span img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 }
 
-.imghead{
+.imghead {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -392,15 +499,29 @@
 	margin-bottom: 7%;
 }
 
-.pbody{
+.pbody {
 	width: 90%;
 	text-align: justify;
 }
 
 .aprev,
 .anext {
-  font-size: 30px;
-  cursor: pointer;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 60vh;
+}
+
+.footer_svg_1,
+.footer_svg_2 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
 }
 
 
