@@ -447,14 +447,77 @@
 	margin-left: 1rem;
 }
 
+.studentstestimonials {
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonialsbox {
+	width: 66%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.testimonials {
+	border: 1px solid black;
+	border-radius: 14px;
+	height: 12rem;
+	width: 20rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.testimonials span {
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonials span img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.imghead {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 7%;
+}
+
+.pbody {
+	width: 90%;
+	text-align: justify;
+}
+
+.aprev,
+.anext {
+	font-size: 30px;
+	cursor: pointer;
+}
+
 footer {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 }
 
-footer img {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.footer_svg_1,
+.footer_svg_2 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
 }
