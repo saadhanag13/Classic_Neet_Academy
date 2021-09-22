@@ -313,6 +313,11 @@
 
 .design {
 	position: relative;
+  width: 70%;
+}
+
+.design svg {
+  width: 70%;
 }
 
 .neettoppers {
