@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  
+}
+
+h1, h2, h3, h4{
+	font-family: 'Roboto', sans-serif;
 }
 
 /* NavBar */
@@ -459,7 +466,7 @@
 }
 
 .testimonialsbox {
-	width: 66%;
+	width: 90%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -489,6 +496,10 @@
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+}
+
+.studentsh1{
+	font-size: 2.5rem;
 }
 
 .imghead {
