@@ -33,29 +33,29 @@
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade slideimg">
         <div class="numbertext"></div>
-        <img src="img/img5.jpg" style="width: 100%" class="slideimage" />
+        <img src="../img/img5.jpg" style="width: 100%" class="slideimage" />
         <div class="text"></div>
       </div>
 
       <div class="mySlides fade slideimg">
         <div class="numbertext"></div>
-        <img src="img/img1.jpeg" style="width: 100%" class="slideimage" />
+        <img src="../img/img1.jpeg" style="width: 100%" class="slideimage" />
         <div class="text"></div>
       </div>
 
       <div class="mySlides fade slideimg">
         <div class="numbertext"></div>
-        <img src="img/img2.jpeg" style="width: 100%" class="slideimage" />
+        <img src="../img/img2.jpeg" style="width: 100%" class="slideimage" />
         <div class="text"></div>
       </div>
       <div class="mySlides fade slideimg">
         <div class="numbertext"></div>
-        <img src="img/img3.jpeg" style="width: 100%" class="slideimage" />
+        <img src="../img/img3.jpeg" style="width: 100%" class="slideimage" />
         <div class="text"></div>
       </div>
       <div class="mySlides fade slideimg">
         <div class="numbertext"></div>
-        <img src="img/img4.jpeg" style="width: 100%" class="slideimage" />
+        <img src="../img/img4.jpeg" style="width: 100%" class="slideimage" />
         <div class="text"></div>
       </div>
 
@@ -211,7 +211,7 @@
       </div>
   </section>
   <div class="neet-2020-toppers">
-    <img src="./img/Vector.svg" alt="SVG">
+    <img src="../img/Vector.svg" alt="SVG">
     <div class="neet-2020-toppers-a">
       <a href="/">Our Results - Neet 2020 Toppers</a>
     </div>
@@ -243,27 +243,27 @@
    <section class="Hexagon">
         <div class="left">
           <div class="spilldiv">
-            <img class="spill " src="./img/spill.png" alt="">
+            <img class="spill " src="../img/spill.png" alt="">
           </div>
           <div class="spilldiv1">
-            <img class="spill1" src="./img/spill1.png" alt="">
+            <img class="spill1" src="../img/spill1.png" alt="">
           </div>
           <div class="spill2">
-            <img class="spill2" src="./img/spill2.png" alt="">
+            <img class="spill2" src="../img/spill2.png" alt="">
           </div>
         </div>
 
         <div class="right">
             <div class="hexadiv1 hexadiv">
-              <img class="hexa1 hexa" src="./img/hexa1.png" alt="">
+              <img class="hexa1 hexa" src="../img/hexa1.png" alt="">
               <h3>NEET</h3>
             </div>
             <div class="hexadiv2 hexadiv">
-              <img class="hexa2 hexa" src="./img/hexa2.png" alt="">
+              <img class="hexa2 hexa" src="../img/hexa2.png" alt="">
               <h3>IIT & Medical<br>Foundation</h3>
             </div>
             <div class="hexadiv3 hexadiv">
-            <img class="hexa3 hexa" src="./img/hexa3.png" alt="">
+            <img class="hexa3 hexa" src="../img/hexa3.png" alt="">
             <h3>IIT-JEE</h3>
             </div>
         </div>
@@ -331,7 +331,7 @@
       </div>
       <div class="footer-body">
         <div class="address-container">
-          <h1>SALEM</h1>
+          <h1>Salem</h1>
           <div><span><svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20"
                 fill="currentColor">
                 <path fill-rule="evenodd"
@@ -347,7 +347,7 @@
 </svg> &nbsp; +91-78670 14165</span>
         </div>
         <div class="address-container">
-          <h1>NAMAKAL</h1>
+          <h1>Namakkal</h1>
           <div><span><svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20"
                 fill="currentColor">
                 <path fill-rule="evenodd"
@@ -362,7 +362,7 @@
 </svg> &nbsp; +91-78670 14168</span>
         </div>
         <div class="address-container">
-          <h1>DHARMAPURI</h1>
+          <h1>Dharmapuri</h1>
           <div><span><svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20"
                 fill="currentColor">
                 <path fill-rule="evenodd"
@@ -398,33 +398,7 @@
       <div class="footer-last">@Copyright Classic Neet Academy 2020</div>
     </div>
   </footer>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
-    }
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 4000);
-    }
-  </script>
+  <script src="./index.js"/>
 </body>
 
 </html>
