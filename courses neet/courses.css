@@ -43,7 +43,7 @@
     display: flex;
     top: 20px;
 }
-.overview span p{
+.overview p{
     width: 50%;
     height: 50vh;
     word-spacing: 5px;
@@ -77,7 +77,7 @@
     display: flex;
     bottom: 33rem;
 }
-.module p{
+.module p {
     width: 100%;
     word-spacing: 5px;
     padding-left: 10%;
