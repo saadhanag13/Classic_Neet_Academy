@@ -43,8 +43,8 @@
     display: flex;
     top: 20px;
 }
-.overview p{
-    width: 50vw;
+.overview span p{
+    width: 50%;
     height: 50vh;
     word-spacing: 5px;
     line-break: normal;
@@ -53,7 +53,7 @@
     line-height: 170%;
 
 }
-.overview span{
+.overview span {
    
     position: relative;
     display: flex;
@@ -78,7 +78,7 @@
     bottom: 33rem;
 }
 .module p{
-    width: 100vw;
+    width: 100%;
     word-spacing: 5px;
     padding-left: 10%;
     display: flex;
