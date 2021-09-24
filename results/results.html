@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="results.css"> -->
+    <link rel="stylesheet" href="../common.css">
+    <title>Results | ClassicNeetAcademy</title>
+    <style media="screen">
+      /* Fade Animation Code Starts*/
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.75;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.75;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      /* Fade Animation Code Ends */
+
+      /* Results Page Slideshow Begins */
+      .slideshow {
+        height: 90vh;
+        width: 100%;
+      }
+
+      .slideImage {
+        height: 70vh;
+        width: 100%;
+      }
+
+      /* .slideBackground {
+        position: absolute;
+        width: 60vw;
+        height: 100vh;
+        background: blue;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      } */
+
+      /* Slideshow Container */
+      .slideshow-container {
+        max-width: 80vw;
+        max-height: 70vh;
+        position: relative;
+        margin: auto;
+        user-select: auto;
+        margin-top: 80px;
+      }
+
+      /* Default State of Images */
+      .mySlides {
+        display: none;
+      }
+
+      /* Navigation Buttons Starts*/
+      .previous {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: grey;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 1s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: grey;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 1s ease;
+        border-radius: 3px 0 0 3px;
+        user-select: none;
+        right: 0;
+      }
+
+      .previous:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Navigation Buttons Ends */
+
+      /* Navigation Text Starts */
+      /* Caption Text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Slide Number (Page Number or Number Text) */
+      .numberText {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* Navigation Text Ends */
+
+      /* Page Indicators (Dots) Starts */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #BBBBBB;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 1s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #222222;
+      }
+      /* Page Indicators (Dots) Ends */
+      /* Results Page Slideshow Ends */
+
+      /* Topper Box CSS Starts */
+      .neetToppers {
+        height: 225vh;
+        width: 100%;
+        margin: 6rem 0;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .neetToppers > h1 {
+        font-size: 2.5rem;
+      }
+
+      .neetToppers > h2 {
+        font-size: 2.5em;
+      }
+
+      .neetToppers > h6 {
+        font-size: 2.5em;
+      }
+
+      .topperCardContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        border-style: solid;
+      }
+
+      .topperCard {
+        width: 35%;
+        height:100%;
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space around;
+      }
+
+      .topperImage1, .topperImage2, .topperImage3, .topperImage4, .topperImage5, .topperImage6 {
+        width: 15rem;
+        height: 15rem;
+        position: relative;
+        border-style: solid;
+        border-width: 1px;
+      }
+
+      .topperDetails {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .topperDetails h2 {
+        font-size: 2rem;
+        /*margin-top: 2rem;*/
+        margin-bottom: 2rem;
+      }
+
+      .topperDetails h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .topperDetails h4 {
+        font-size: 1.5rem;
+      }
+
+      /* Topper Images */
+      .topperImage1 {
+        background: url("https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj") center/cover;
+      }
+
+      .topperImage2 {
+        background: url("https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj") center/cover;
+      }
+
+      .topperImage3 {
+        background: url("https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj") center/cover;
+      }
+
+      .topperImage4 {
+        background: url("https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj") center/cover;
+      }
+
+      .topperImage5 {
+        background: url("https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj") center/cover;
+      }
+
+      .topperImage6 {
+        background: url("https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj") center/cover;
+      }
+    </style>
+</head>
+<body>
+  <!-- Header & Navbar -->
+
+  <header class="nav-container">
+      <nav class="navbar">
+        <span><img src="../img/homepage/logo.jpeg" alt="ClassicNeetAcademyLogo"></span>
+        <ul class="navlink-container">
+          <li class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/">About Us</a></li>
+          <li class="nav-link"><a href="/">Demo Videos</a></li>
+          <li class="nav-link"><a href="/">Courses</a></li>
+          <li class="nav-link"><a href="/">Results</a></li>
+          <li class="nav-link"><a href="/">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- Slideshow for Results Page -->
+
+  <section class="slideshow">
+    <div class="slideBackground"></div>
+    <div class="slideshow-container">
+      <!-- This Section Contains all the necessary images for the slide show present in the results page -->
+      <!-- Image 1 -->
+      <div class="mySlides fade slideImage">
+        <div class="numberText"></div>
+        <img src="https://images.shiksha.com/mediadata/images/articles/1592900210phpR2Y5lF.jpeg" alt="Topper Image 1" style="width: 100%" class="slideImage"/>
+        <div class="text"></div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="mySlides fade slideImage">
+        <div class="numberText"></div>
+        <img src="https://yt3.ggpht.com/ytc/AKedOLSdVJLclpFsgf62NsWc0VqvXZ8_vvA_cg9UIHDM=s900-c-k-c0x00ffffff-no-rj" alt="Topper Image 2" style="width: 100%" class="slideImage"/>
+        <div class="text"></div>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="mySlides fade slideImage">
+        <div class="numberText"></div>
+        <img src="" alt="Topper Image 3" style="width: 100%" class="slideImage"/>
+        <div class="text"></div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="mySlides fade slideImage">
+        <div class="numberText"></div>
+        <img src="" alt="Topper Image 4" style="width: 100%" class="slideImage"/>
+        <div class="text"></div>
+      </div>
+
+      <!-- Image 5 -->
+      <div class="mySlides fade slideImage">
+        <div class="numberText"></div>
+        <img src="" alt="Topper Image 5" style="width: 100%" class="slideImage"/>
+        <div class="text"></div>
+      </div>
+
+      <!-- Image 5 -->
+      <div class="mySlides fade slideImage">
+        <div class="numberText"></div>
+        <img src="" alt="Topper Image 6" style="width: 100%" class="slideImage"/>
+        <div class="text"></div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <!-- Slide Indicators (Highlighted: Dot, Unhighlighted: Circle) -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+  </section>
+
+  <section class="neetToppers">
+    <h1>Our Results</h1>
+    <div class="topperCardContainer">
+      <div class="topperCard">
+        <span class="topperImage1"></span>
+        <div class="topperDetails">
+          <h2>Naparajith</h2>
+          <h4>NEET Score</h4>
+          <h3>444/720</h3>
+          <h4>College Name</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="topperCardContainer">
+      <div class="topperCard">
+        <span class="topperImage2"></span>
+        <div class="topperDetails">
+          <h2>Naparajith</h2>
+          <h4>NEET Score</h4>
+          <h3>444/720</h3>
+          <h4>College Name</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="topperCardContainer">
+      <div class="topperCard">
+        <span class="topperImage3"></span>
+        <div class="topperDetails">
+          <h2>Naparajith</h2>
+          <h4>NEET Score</h4>
+          <h3>444/720</h3>
+          <h4>College Name</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="topperCardContainer">
+      <div class="topperCard">
+        <span class="topperImage4"></span>
+        <div class="topperDetails">
+          <h2>Naparajith</h2>
+          <h4>NEET Score</h4>
+          <h3>444/720</h3>
+          <h4>College Name</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="topperCardContainer">
+      <div class="topperCard">
+        <span class="topperImage5"></span>
+        <div class="topperDetails">
+          <h2>Naparajith</h2>
+          <h4>NEET Score</h4>
+          <h3>444/720</h3>
+          <h4>College Name</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="topperCardContainer">
+      <div class="topperCard">
+        <span class="topperImage6"></span>
+        <div class="topperDetails">
+          <h2>Naparajith</h2>
+          <h4>NEET Score</h4>
+          <h3>444/720</h3>
+          <h4>College Name</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img class="footer_svg_1" src="../img/homepage/footer_svg_1.png" alt="Footer Wave 1">
+    <img class="footer_svg_2" src="../img/homepage/footer_svg_2.png" alt="Footer Wave 2">
+    <div class="footer_content">
+
+        <div class="footer_head">
+            <div class="footer-head-details">
+              <span>Classic NEET Academy</span>
+              <span>Contact Information</span>
+            </div>
+            <div class="social">
+              <img src="https://img.icons8.com/color/50/000000/youtube-play.png" alt="YouTube Icon">
+              <img src="https://img.icons8.com/fluency/48/000000/facebook.png" alt="Facebook Icon">
+              <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram Icon">
+            </div>
+        </div>
+
+        <div class="footer-body">
+          <!-- Salem Address-->
+          <div class="address-container">
+            <h1>Salem</h1>
+            <div>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <div class="address">
+                1/1, First Floor, PS Square, KHS Hospital Road, Opp. to Ponnuswamy Gounder Kalyana Mandapam, Salem - 636004
+              </div>
+            </div>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              &nbsp; +91-78670 14165
+            </span>
+          </div>
+
+          <!-- Namakkal Address-->
+          <div class="address-container">
+            <h1>Namakkal</h1>
+            <div>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <div class="address">
+                84-B/5, Third Floor, S.S Complex (Ramesh Theatre Bus Stop), Trichy Road, Namakkal - 637002
+              </div>
+            </div>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              &nbsp; +91-78670 14168
+            </span>
+          </div>
+
+          <!-- Dharmapuri Address-->
+          <div class="address-container">
+            <h1>Dharmapuri</h1>
+            <div>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <div class="address">
+                5-A1, Narasimma Achari Street, Town BSNL office Back Side, Dharmapuri - 636701
+              </div>
+            </div>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              &nbsp; +91-78670 14164
+            </span>
+          </div>
+
+          <!-- Vellore Address-->
+          <div class="address-container">
+            <h1>Vellore</h1>
+            <div>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="location-svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <div class="address">
+                First Floor, 7/2, Al-Noor complex, Palathorom St, Katpadi Rd / New Bye-pass Road, Vellore - 632006
+              </div>
+            </div>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              &nbsp; +91-7373755664
+            </span>
+          </div>
+        </div>
+        <div class="footer-last">
+          Copyright &copy; 2021 Classic NEET Academy. All rights reserved.
+        </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</body>
+</html>
