@@ -20,21 +20,12 @@
 	object-fit: cover;
 }
 
-<<<<<<< HEAD
-.background {
-	position: absolute;
-	right: 0;
-	height: 100%;
-	width: 70%;
-	background: blue;
-=======
 .background{
   position: absolute;
   right: 0;
   height: 100%;
   width: 70%;
   background: #1E2886;
->>>>>>> 7ee8b7ee41a38b59ca50ef734114081a7dfccd64
 }
 
 /* section-2  latest updates*/
