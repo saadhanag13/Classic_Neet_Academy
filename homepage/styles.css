@@ -1,404 +1,407 @@
 .swiper {
-  width: 70% !important;
-  height: 70% !important;
+	width: 70% !important;
+	height: 70% !important;
 }
 
 .swipersection {
-  position: relative;
-  width: 100%; 
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .swiper-slide img {
-  position: absolute;
-  /* display: inline; */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	position: absolute;
+	/* display: inline; */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-.background{
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 70%;
-  background: blue;
+.background {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 70%;
+	background: blue;
 }
 
 /* section-2  latest updates*/
 .section-2 {
-  position: relative;
-  width: 100%;
-  height: 120vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: aqua; */
+	position: relative;
+	width: 100%;
+	height: 120vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: aqua; */
 }
 
 .section-2 .flex {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+	width: 100%;
+	height: 100vh;
+	display: flex;
 }
 
 .section-2 .div-1 {
-  position: relative;
-  width: 50%;
-  height: 100%;
+	position: relative;
+	width: 50%;
+	height: 100%;
 }
 
 .section2 .div-1 img {
-  position: relative;
-  width: 100%;
-  height: 100%;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .section-2 .div-2 {
-  position: relative;
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: black; */
+	position: relative;
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: black; */
 }
 
 .div-2 .news-box {
-  height: 65vh;
-  width: 70%;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 65vh;
+	width: 70%;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .news-box .space {
-  width: 85%;
+	width: 85%;
 }
 
 .news-box p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 .bottom-drive {
-  border: 1px solid black;
-  padding: 10px 18px;
-  border-radius: 20px;
+	border: 1px solid black;
+	padding: 10px 18px;
+	border-radius: 20px;
 }
 
 .bottom-drive a {
-  text-decoration: none;
-  letter-spacing: 0.7px;
-  font-size: 20px;
-  font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 0.7px;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 .div-2 h1 {
-  font-weight: bolder;
-  font-size: 30px;
+	font-weight: bolder;
+	font-size: 30px;
 }
 
 .span {
-  width: 70%;
-  margin-bottom: 20px;
+	width: 70%;
+	margin-bottom: 20px;
 }
 
 .importantdates {
-  position: relative;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
+	position: relative;
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .grid {
-  position: relative;
-  width: 35%;
-  height: 100%;
-  display: grid;
-  grid-template-areas:
-    "cont1 cont2"
-    "cont3 cont4"
-    "cont5 cont6";
-  align-content: center;
-  justify-content: space-around;
+	position: relative;
+	width: 35%;
+	height: 100%;
+	display: grid;
+	grid-template-areas:
+		"cont1 cont2"
+		"cont3 cont4"
+		"cont5 cont6";
+	align-content: center;
+	justify-content: space-around;
 }
 
 .item1 {
-  grid-area: cont1;
+	grid-area: cont1;
 }
 .item2 {
-  grid-area: cont2;
+	grid-area: cont2;
 }
 .item3 {
-  grid-area: cont3;
+	grid-area: cont3;
 }
 .item4 {
-  grid-area: cont4;
+	grid-area: cont4;
 }
 .item5 {
-  grid-area: cont5;
+	grid-area: cont5;
 }
 
 .item5 {
-  grid-area: cont6;
+	grid-area: cont6;
 }
 
 .grid-item {
-  /* padding: 30px; */
-  height: 150px;
-  width: 150px;
-  border-radius: 10px;
-  background-color: #1face8;
-  margin: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 15px;
+	/* padding: 30px; */
+	height: 150px;
+	width: 150px;
+	border-radius: 10px;
+	background-color: #1face8;
+	margin: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 5px 15px;
 }
 
-.grid-item:hover{
-  /* background: ; */
-  cursor: pointer;
+.grid-item:hover {
+	/* background: ; */
+	cursor: pointer;
 }
 
 .grid-item span {
-  width: 85%;
+	width: 85%;
 }
 
 .design {
-  position: relative;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .design svg {
-  width: 70%;
+	width: 70%;
 }
 
 .neet-toppers {
-  height: 45vh;
-  width: 100%;
-  margin: 6rem 0;
-  padding: 0 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	height: 45vh;
+	width: 100%;
+	margin: 6rem 0;
+	padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .neet-toppers > h1 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .topper-card-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 4rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 4rem;
 }
 
 .topper-card {
-  width: 35%;
-  height: 100%;
-  padding: 1rem;
-  background-color: rgba(86, 128, 54, 0.79);
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	width: 35%;
+	height: 100%;
+	padding: 1rem;
+	background-color: rgba(86, 128, 54, 0.79);
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .topper-image_1 {
-  width: 9rem;
-  height: 9rem;
-  position: relative;
-  background: url("../img/homepage/cfcda7f712d442f9dd774337b26de8fe (1).jpg") center/cover;
+	width: 9rem;
+	height: 9rem;
+	position: relative;
+	background: url("../img/homepage/cfcda7f712d442f9dd774337b26de8fe (1).jpg")
+		center/cover;
 }
 
 .topper-image_2 {
-  width: 9rem;
-  height: 9rem;
-  position: relative;
-  background: url("../img/homepage/img1.jpeg") left/cover;
+	width: 9rem;
+	height: 9rem;
+	position: relative;
+	background: url("../img/homepage/img1.jpeg") left/cover;
 }
 
 .topper-details {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .topper-details h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+	font-size: 2rem;
+	margin-bottom: 2rem;
 }
 
 .topper-details p {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .neet-2020-toppers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10rem 0px;
-  position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10rem 0px;
+	position: relative;
 }
 
 .neet-2020-toppers img {
-  position: absolute;
-  width: 20%;
-  z-index: -1;
+	position: absolute;
+	width: 20%;
+	z-index: -1;
 }
 
 .neet-2020-toppers-a {
-  position: absolute;
-  border-radius: 50px;
-  padding: 0.5rem 5rem;
-  border: 1px solid black;
-  font-size: 2rem;
-  background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	border-radius: 50px;
+	padding: 0.5rem 5rem;
+	border: 1px solid black;
+	font-size: 2rem;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .neet-2020-toppers-a a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .stats {
-  width: 100%;
-  height: 60vh;
-  background: url("../img/homepage/stats_bg_img.jpg");
-  background-size: cover;
-  background-position: 0px 54%;
-  margin-top: 6rem;
-  position: relative;
+	width: 100%;
+	height: 60vh;
+	background: url("../img/homepage/stats_bg_img.jpg");
+	background-size: cover;
+	background-position: 0px 54%;
+	margin-top: 6rem;
+	position: relative;
 }
 
 .stats-details {
-  width: 100%;
-  height: 30%;
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
+	width: 100%;
+	height: 30%;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
 }
 
 .stat {
-  display: flex;
-  width: 20%;
-  padding: 2rem;
-  height: 100%;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	width: 20%;
+	padding: 2rem;
+	height: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .stat h1 {
-  font-size: 4rem;
+	font-size: 4rem;
 }
 
 .stat h3 {
-  font-size: 1.5rem;
-  margin-left: 1rem;
+	font-size: 1.5rem;
+	margin-left: 1rem;
 }
 
 .Hexagon {
-  position: relative;
-  width: 100%;
-  height: 150vh;
-  display: flex;
+	position: relative;
+	width: 100%;
+	height: 150vh;
+	display: flex;
 }
 
 .hexadiv1 {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0%;
-  transform: translateX(0%);
-  transform: translateY(0%);
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0%;
+	transform: translateX(0%);
+	transform: translateY(0%);
 }
 
 .hexadiv1 h3 {
-  padding-left: 21%;
+	padding-left: 21%;
 }
 .hexadiv2 h3 {
-  padding-right: 11%;
+	padding-right: 11%;
 }
 .hexadiv3 h3 {
-  padding-left: 21%;
+	padding-left: 21%;
 }
 
 .hexadiv2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  transform: translate(-18%, -14%);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	transform: translate(-18%, -14%);
 }
 
 .hexadiv3 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  transform: translate(0%, -26%);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	transform: translate(0%, -26%);
 }
 
 .left {
-  position: relative;
-  width: 50%;
-  height: 50%;
+	position: relative;
+	width: 50%;
+	height: 50%;
 }
 
 .right {
-  position: relative;
-  right: 0%;
-  width: 50%;
-  height: 90%;
+	position: relative;
+	right: 0%;
+	width: 50%;
+	height: 90%;
 }
 
 .hexa {
-  /* top: 0; */
-  position: relative;
-  height: 100%;
-  width: 50%;
+	/* top: 0; */
+	position: relative;
+	height: 100%;
+	width: 50%;
 }
 
 .hexadiv {
-  position: relative;
-  height: 37.33%;
-  width: 95%;
-  /* transform: translate(10px, 10px); */
+	position: relative;
+	height: 37.33%;
+	width: 95%;
+	/* transform: translate(10px, 10px); */
 }
 
 /* .hexadiv img{
 	width: 100%;
 } */
 
-.spill{
+.spill {
 	position: absolute;
 	top: 40%;
 	left: 0;
@@ -406,83 +409,220 @@
 	height: 108%;
 }
 
-.spill1{
+.spill1 {
 	position: absolute;
 	right: 0%;
 	top: 0%;
 	right: 15%;
-    top: 19%;
+	top: 19%;
 }
 
-.spill2{
+.spill2 {
 	position: absolute;
 	right: 0%;
 	top: 0%;
 	right: 20%;
-    top: 113%;
+	top: 113%;
 }
 
 .studentstestimonials {
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .testimonialsbox {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
 }
 
 .testimonials {
-  border: 1px solid black;
-  border-radius: 14px;
-  height: 12rem;
-  width: 20rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	border: 1px solid black;
+	border-radius: 14px;
+	height: 12rem;
+	width: 20rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .testimonials span {
-  height: 100%;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .testimonials span img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
 
 .studentsh1 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .imghead {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 7%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 7%;
 }
 
 .pbody {
-  width: 90%;
-  text-align: justify;
+	width: 90%;
+	text-align: justify;
 }
 
 .aprev,
 .anext {
-  font-size: 30px;
-  cursor: pointer;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+@media (max-width: 400px) {
+	.swipersection {
+		height: 50vh;
+	}
+	.swiper-slide img {
+		height: 35vh;
+	}
+	.importantdates {
+		flex-direction: column;
+	}
+	.grid {
+		display: block;
+		width: 70%;
+	}
+	.grid-item {
+		width: 250px;
+		padding: 0;
+		margin: 25px 0px;
+	}
+	.design {
+		display: none;
+	}
+	.section-2 .div-1 {
+		display: none;
+	}
+	.section-2 .div-2 {
+		width: 100%;
+		margin: 50% 0;
+	}
+	.section-2 {
+		display: none;
+	}
+	.neet-toppers {
+		margin-top: 80vh;
+	}
+	.topper-card-container {
+		flex-direction: column;
+	}
+	.topper-card {
+		width: 100%;
+		margin: 5%;
+	}
+	.neet-2020-toppers img {
+		display: none;
+	}
+	.neet-2020-toppers-a {
+		top: 25px;
+		width: fit-content;
+		font-size: 20px;
+		padding: 20px 15px;
+	}
+	.stats-details {
+		/* flex-direction: column;
+		align-items: unset;
+		width: fit-content; */
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.stat {
+		position: relative;
+		width: 100px;
+		right: 30px;
+	}
+	.stat h1 {
+		font-size: 3rem;
+	}
+	.stat h3 {
+		font-size: 18px;
+	}
+	/* .spill1
+	{
+		display: none;
+	}
+	.spill
+	{
+		display: none;
+	}
+	.spill2
+	{
+		display: none;
+	} */
+	.left {
+		display: none;
+	}
+	.right {
+		width: 90%;
+		margin-top: 5%;
+		left: 10%;
+		height: 80%;
+	}
+	.Hexagon {
+		position: relative;
+		height: 85vh;
+	}
+	.testimonialsbox
+	{
+		flex-direction: column;
+	}
+	.studentstestimonials
+	{
+		height: 130vh;
+	}
+	.studentsh1
+	{
+		/* display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; */
+		text-align: center;
+	}
+	.pbody
+	{
+		width: 100%;
+	}
+	.testimonials span img
+	{
+		width: 80px;
+		height: 80px;
+	}
+	.testimonials
+	{
+		margin: 3%;
+		font-size: 15px;
+		padding: 2%;
+	}
+	.aprev, .anext
+	{
+		display: none;
+	}
+	.neet-toppers > h1
+	{
+		text-align: center;
+		margin: 5%;
+	}
 }
