@@ -6,6 +6,9 @@ const line1 = document.querySelector('.line1');
 const line2 = document.querySelector('.line2');
 const line3 = document.querySelector('.line3');
 
+
+console.log('Hello');
+
 const navslide = () => {
   hamburger.addEventListener("click", () => {
     //toggle
@@ -38,48 +41,7 @@ const navslide = () => {
 
 navslide();
 
-// const menu = document.querySelector(".menu");
 
-// let menuopen = false;
-
-// function iftrue() {
-//   menu.classList.add("open");
-//   nav_container.style.top = "0";
-//   title.style.opacity = "0";
-//   menuopen = true;
-// }
-
-// function iffalse() {
-//   menu.classList.remove("open");
-//   nav_container.style.top = "-150vh";
-//   title.style.opacity = "1";
-//   menuopen = false;
-// }
-
-// menu.addEventListener("click", () => {
-//   if (!menuopen) {
-//     iftrue();
-//   } else {
-//     iffalse();
-//   }
-// });
-
-// nav_container.addEventListener("click", () => {
-//   iffalse();
-// });
-
-// const navContainer = document.querySelector(".nav-container");
-
-// lastScroll = 0;
-// window.addEventListener("scroll", () => {
-//   let currentScroll = window.scrollY;
-//   if (currentScroll > lastScroll) {
-//     navContainer.style.transform = `translateY(${-100}%)`;
-//   } else {
-//     navContainer.style.transform = `translateY(${0}%)`;
-//   }
-//   lastScroll = currentScroll;
-// });
 
 // swiper js
 
@@ -108,16 +70,3 @@ var swiper = new Swiper(".mySwiper", {
   keyboard: true,
 });
 
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
