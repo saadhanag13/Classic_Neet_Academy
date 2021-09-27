@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   <link rel="stylesheet" href="./homepage/styles.css" />
   <link rel="stylesheet" href="./common.css" />
   <title>ClassicNeetAcademy</title>
@@ -19,9 +23,9 @@
         <li class=""><a href="./index.html">Home</a></li>
         <li class=""><a href="./About us/about-us.html">About Us</a></li>
         <li class=""><a href="./Demo videos/Demovideos.html">Demo Videos</a></li>
-        <li class=""><a href="/">Courses</a></li>
+        <li class=""><a href="./index.html#courses">Courses</a></li>
         <li class=""><a href="/">Success Stories</a></li>
-        <li class=""><a href="/">Results</a></li>
+        <li class=""><a href="./results/">Results</a></li>
         <li class=""><a href="/">Contact Us</a></li>
       </ul>
       <div class="hamburger">
@@ -30,63 +34,36 @@
         <div class="line3"></div>
       </div>
     </nav>
+
   <!-- slideshow -->
-  <!-- Slideshow container -->
-
-  <section class="slideshow">
-    <div class="slidebg"></div>
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade slideimg">
-        <div class="numbertext"></div>
-        <img src="./img/homepage/img5.jpg" style="width: 100%" class="slideimage" />
-        <div class="text"></div>
+    <!-- Swiper -->
+    <section class="swipersection">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/homepage/img1.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/homepage/img2.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/homepage/img3.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/homepage/img4.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/homepage/img2.jpeg" alt="" />
+        </div>
       </div>
-
-      <div class="mySlides fade slideimg">
-        <div class="numbertext"></div>
-        <img src="./img/homepage/img1.jpeg" style="width: 100%" class="slideimage" />
-        <div class="text"></div>
-      </div>
-
-      <div class="mySlides fade slideimg">
-        <div class="numbertext"></div>
-        <img src="./img/homepage/img2.jpeg" style="width: 100%" class="slideimage" />
-        <div class="text"></div>
-      </div>
-      <div class="mySlides fade slideimg">
-        <div class="numbertext"></div>
-        <img src="./img/homepage/img3.jpeg" style="width: 100%" class="slideimage" />
-        <div class="text"></div>
-      </div>
-      <div class="mySlides fade slideimg">
-        <div class="numbertext"></div>
-        <img src="./img/homepage/img4.jpeg" style="width: 100%" class="slideimage" />
-        <div class="text"></div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination"></div>
     </div>
-    <br />
+    <div class="background"></div>
+    </section>
 
-    <!-- The dots/circles -->
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
 
-    <div class="chatbot">
-      <!-- <img
-          style="width: 247px; height: 247px; border-radius: 9999px"
-          src="https://via.placeholder.com/247x247"
-        /> -->
-    </div>
-  </section>
   <section class="importantdates">
     <div class="grid">
       <div class="grid-item item1">Exam Frequency</div>
@@ -230,7 +207,7 @@
       </div>
     </div>
   </section>
-   <section class="Hexagon">
+   <section class="Hexagon" id="courses">
         <div class="left">
           <div class="spilldiv">
             <img class="spill " src="./img/homepage/spill.png" alt="">
@@ -390,5 +367,7 @@
     </div>
   </footer>
   <script src="./homepage/index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./common.js"></script>
 </body>
 </html>
