@@ -24,7 +24,7 @@ nav {
 	min-height: 5vh;
 	height: 10vh;
 	font-size: 15px;
-	background: whitesmoke;
+	background: white;
 }
 
 .logo > img {
@@ -162,7 +162,6 @@ footer {
 	margin-top: 2rem;
 	justify-content: space-around;
 }
-
 .address-container {
 	width: 18%;
 	display: flex;
@@ -190,7 +189,7 @@ footer {
 }
 
 .address-container span {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: 500;
 }
 
